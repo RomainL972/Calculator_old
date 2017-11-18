@@ -3,7 +3,7 @@
 
 #include "string.h"
 
-int isDigit(char test, char numbers[]);
+int isDigit(char test, const char numbers[]);
 int isOperator(char test);
 int isMinus(char test);
 int isBraquO(char test);

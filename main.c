@@ -1,11 +1,11 @@
 #include "parse.h"
 
-char *numbers;
+const char *numbers;
 
-int main(int argc, char const *argv[])
+int main(int argc, const char *argv[])
 {
     testArgv(argc, argv);
     numbers = argv[1];
-    calculate(parseStdin(argv[1]));
+    parseStdinInit();
     return 0;
 }

@@ -2,9 +2,12 @@
 #define CHANGE_LEVEL_H_INCLUDED
 
 #include "struct.h"
+#include <stdlib.h>
 
-void newBraquet(ElementArray ***main, Element **lastNumber);
-void endBraquet(ElementArray ***main, Element **lastNumber);
-void changeLevel(int newLevel, ElementArray ***main, )
+int index[2];
+
+void newBraquet(struct ElementArray ***main, struct Element **lastNumber);
+void endBraquet(struct ElementArray ***main, struct Element **lastNumber);
+void changeLevel(int newLevel, struct ElementArray ***main/*, enum TypeExpression type*/);
 
 #endif

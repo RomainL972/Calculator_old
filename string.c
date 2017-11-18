@@ -21,7 +21,7 @@ int strFind(const char str[], const char find)
 float strFindArray(const char str[], const char find[]) {
     int i;
     int result;
-    for(i = 0; i < length; i++) {
+    for(i = 0; i < strLength(find); i++) {
         if((result = strFind(str, find[i])))
             return i + result / 10;
     }

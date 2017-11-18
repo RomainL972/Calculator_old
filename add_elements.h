@@ -1,14 +1,14 @@
 #ifndef ADD_ELEMENTS_H_INCLUDED
 #define ADD_ELEMENTS_H_INCLUDED
 
-char numbers[];
-int level;
+const char *numbers;
+int index[2];
 #include "struct.h"
 #include "change_level.h"
 
-void newDigit(Element **lastNumber, Element newElement);
-void newBasicOperator(ElementArray ***main, Element **lastNumber, Element newElement);
-void newComplexOperator(ElementArray ***main, Element **lastNumber, Element newElement);
-void newMinus(ElementArray **lastNumber);
+enum WaitFor newDigit(struct ElementArray ***main, struct Element **lastNumber, struct Element newElement);
+enum WaitFor newBasicOperator(struct ElementArray ***main, struct Element **lastNumber, struct Element newElement);
+enum WaitFor newComplexOperator(struct ElementArray ***main, struct Element **lastNumber, struct Element newElement);
+enum WaitFor newMinus(struct Element **lastNumber);
 
 #endif

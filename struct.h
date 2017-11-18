@@ -10,18 +10,18 @@ struct Element
 	struct ElementArray *reference;
 };
 
+struct Number
+{
+    char *digits;
+    enum Sign sign;
+};
+
 struct ElementArray
 {
 	struct Element **expression;
 	enum TypeExpression type;
 	struct Number result;
 	int priority;
-};
-
-struct Number
-{
-	char *digits;
-	enum Sign sign;
 };
 
 #endif

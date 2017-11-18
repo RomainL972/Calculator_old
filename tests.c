@@ -1,6 +1,6 @@
 #include "tests.h"
 
-int isDigit(char test, char numbers[]) {
+int isDigit(char test, const char numbers[]) {
 	return strFind(numbers, test);
 }
 
