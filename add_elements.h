@@ -5,10 +5,12 @@ const char *numbers;
 int index[2];
 #include "struct.h"
 #include "change_level.h"
+#include "tests.h"
 
 enum WaitFor newDigit(struct ElementArray ***main, struct Element **lastNumber, struct Element newElement);
 enum WaitFor newBasicOperator(struct ElementArray ***main, struct Element **lastNumber, struct Element newElement);
 enum WaitFor newComplexOperator(struct ElementArray ***main, struct Element **lastNumber, struct Element newElement);
 enum WaitFor newMinus(struct Element **lastNumber);
+void addNumber(struct ElementArray ***main, struct Element **number);
 
 #endif
